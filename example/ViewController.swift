@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //ログにハローワールド
+        print("Hello World!")
+        
+        //ラベルを追加してハローワールド、
+        let label = UILabel(frame: CGRect(x: 100, y: 100, width: 200, height: 50))
+        label.text = "Hello World!"
+        self.view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,8 @@
 		F40573F91DE0B0ED008D4A69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40573F71DE0B0ED008D4A69 /* LaunchScreen.storyboard */; };
 		F40574041DE0B0ED008D4A69 /* exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40574031DE0B0ED008D4A69 /* exampleTests.swift */; };
 		F405740F1DE0B0ED008D4A69 /* exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405740E1DE0B0ED008D4A69 /* exampleUITests.swift */; };
+		F44BDC8E1E364C03008DCA1E /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44BDC8D1E364C03008DCA1E /* Field.swift */; };
+		F44BDC8F1E364C03008DCA1E /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44BDC8D1E364C03008DCA1E /* Field.swift */; };
 		F4BA36BD1DE497310039CAB4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA36BC1DE497310039CAB4 /* GameScene.swift */; };
 		F4D4860B1DE4908700C5F147 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D4860A1DE4908700C5F147 /* SpriteKit.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,7 @@
 		F405740A1DE0B0ED008D4A69 /* exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F405740E1DE0B0ED008D4A69 /* exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleUITests.swift; sourceTree = "<group>"; };
 		F40574101DE0B0ED008D4A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44BDC8D1E364C03008DCA1E /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		F4BA36BC1DE497310039CAB4 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		F4D4860A1DE4908700C5F147 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -106,10 +109,11 @@
 				F40573EE1DE0B0ED008D4A69 /* AppDelegate.swift */,
 				F40573F01DE0B0ED008D4A69 /* GameViewController.swift */,
 				F4BA36BC1DE497310039CAB4 /* GameScene.swift */,
+				F44BDC8D1E364C03008DCA1E /* Field.swift */,
 				F40573F21DE0B0ED008D4A69 /* Main.storyboard */,
-				F40573F51DE0B0ED008D4A69 /* Assets.xcassets */,
 				F40573F71DE0B0ED008D4A69 /* LaunchScreen.storyboard */,
 				F40573FA1DE0B0ED008D4A69 /* Info.plist */,
+				F40573F51DE0B0ED008D4A69 /* Assets.xcassets */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -203,7 +207,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = KuboKeisuke;
 				TargetAttributes = {
 					F40573EA1DE0B0ED008D4A69 = {
@@ -276,6 +280,7 @@
 			files = (
 				F4BA36BD1DE497310039CAB4 /* GameScene.swift in Sources */,
 				F40573F11DE0B0ED008D4A69 /* GameViewController.swift in Sources */,
+				F44BDC8E1E364C03008DCA1E /* Field.swift in Sources */,
 				F40573EF1DE0B0ED008D4A69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44BDC8F1E364C03008DCA1E /* Field.swift in Sources */,
 				F40574041DE0B0ED008D4A69 /* exampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +355,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -398,6 +405,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

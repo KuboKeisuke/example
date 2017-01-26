@@ -1,6 +1,9 @@
-//11/23
-//まずはSpriteKitを学ぶ
-//GameSceneクラスと合わせて考える
+/*
+ やること
+ ・地雷の配置
+ ・フラッグ設置、マス開け
+ ・画面表示
+*/
 
 import UIKit
 import SpriteKit
@@ -23,7 +26,6 @@ class GameViewController: UIViewController {
             skView.showsNodeCount = true
         }
         
-        
         //ログにハローワールド
         print("Hello World!")
         
@@ -32,6 +34,16 @@ class GameViewController: UIViewController {
         label.text = "Hello World!"
         self.view.addSubview(label)
         
+        //マス宣言
+        let field = MineField()
+        //ランダム配置
+        field.setMineField()
+        //コンソール用表示
+        field.printMineField()
+        
+        field.setMineAmount()
+        
+        field.printMineAmount()
     }
     
     //ステータスバーの非表示
